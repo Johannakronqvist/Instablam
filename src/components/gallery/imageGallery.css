@@ -1,0 +1,41 @@
+:root {
+	--main-color: rgb(0,8,20);
+	--dark-color: rgb(0,53,102);
+	--light-color: rgb(251, 251, 242);
+	--accent-color: rgb(255, 195, 0);
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.images {
+	height: auto;
+	width: 10em;
+	margin: 0.5em;
+	border: 0.5em solid rgb(251, 251, 242);
+	border-radius: 1%;
+}
+
+.image-location {
+	font-family: sans-serif;
+	font-size: 0.6em;
+}
+
+.image-date {
+	font-family: sans-serif;
+	font-size: 0.5em;
+	margin: 1em;
+}
+
+.handleImageButtons {
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+	.images {
+		width: 12em;
+	}
+  }

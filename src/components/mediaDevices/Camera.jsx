@@ -3,7 +3,7 @@ import './mediaDevices.css'
 import Geolocation from './GeoLocation'
 
 const Camera = () => { 
-	const [useMediaDevices, setUseMediaDevices] = useState(false)
+	// const [useMediaDevices, setUseMediaDevices] = useState(false)
 	const [photoExist, setPhotoExist ] = useState(false)
 	const cameraRef = useRef(null)
 	const photoRef = useRef(null)
@@ -30,9 +30,9 @@ const Camera = () => {
 			console.log('gallery data missing')
 		}
 
-		if('mediaDevices' in navigator) {
-			setUseMediaDevices('mediaDevices' in navigator)
-		} else { console.log('We can not access your camera.')}
+		// if('mediaDevices' in navigator) {
+		// 	setUseMediaDevices('mediaDevices' in navigator)
+		// } else { console.log('We can not access your camera.')}
 	
 	}, [])
 

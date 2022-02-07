@@ -60,13 +60,13 @@ function ImageGallery() {
 			<div className='image-container'>
 		
 				{instablamGallery.map((image, index) => {
-					return <div>
-						<img className='images' src={image.url} alt={image.desc} key={index}/>
+					return <div key={index}>
+						<img className='images' src={image.url} alt={image.desc} />
 						<p className='image-location'>Country: {image.adress.country}, City: {image.adress.city}</p>
 						<p className='image-date'>Date: {image.date}</p>
 						<div className='handleImageButtons'>
-						<button onClick={() => deleteImage(index)}><i class="fas fa-trash-alt"></i></button>
-						<a href={image.url} download><button><i class="fas fa-download"></i></button></a>	
+						<button onClick={() => deleteImage(index)}><i className="fas fa-trash-alt"></i></button>
+						<a href={image.url} download><button><i className="fas fa-download"></i></button></a>	
 						</div>
 					</div>
 				})}

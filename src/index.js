@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css';
 import {CameraPage, GalleryPage} from './App';
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 	<Router>

@@ -15,11 +15,11 @@ const Navigation = () => {
 	return (
 		<div className='navigation'>
 			<Link to='/'>
-				<i class="far fa-images nav-icons"></i>
+				<i className="far fa-images nav-icons"></i>
 				<div>Gallery</div>
 			</Link>
 			<Link to='/camera'>
-				<i class="fas fa-camera-retro nav-icons"></i>
+				<i className="fas fa-camera-retro nav-icons"></i>
 				<div>Camera</div>
 			</Link>
 		</div>

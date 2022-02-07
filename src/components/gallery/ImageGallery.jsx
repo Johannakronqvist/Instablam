@@ -27,7 +27,8 @@ function ImageGallery() {
 	
 	let [instablamGallery, setInstablamGallery] = useState(defaultGallery)
 
-	useEffect( () => {
+	useEffect( (defaultGallery) => {
+
 		let currentStorage = localStorage.getItem('instablam-gallery')
 		let data = JSON.parse(currentStorage)
 		console.log('currentstorage data', data)
